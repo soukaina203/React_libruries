@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Container
-      
+      sx={{position:"absolute",top:"50px",backgroundColor:'orange' ,width:'100%'}}
       >
         <Typography variant="h4" sx={{ p: 2 }}>
           Services
