@@ -1,13 +1,15 @@
-import { AppBar, IconButton, Switch,Toolbar, Typography, experimental_extendTheme }
+import { AppBar, IconButton, Switch,Toolbar, Typography }
  from "@mui/material";
 import { useState } from "react";
 import { createTheme,ThemeProvider, Container } from '@mui/material';
+import { extendTheme } from '@mui/material';
+
 import App from "./App";
 import { theme } from './theme';
 
 function Modes() {
   const [mode ,setMode]=useState(true)
-  const updatedTheme = experimental_extendTheme(theme, {
+  const updatedTheme = extendTheme(theme, {
     palette: {
       mode,
     },
